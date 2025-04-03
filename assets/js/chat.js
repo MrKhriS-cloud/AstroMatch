@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         userInput.value = ""; // Vide l'input
 
         try {
-            const response = await fetch("http://localhost:3000/astrobot", {
+            const response = await fetch("https://astromatch-irbi.onrender.com/astrobot", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ message: userMessage }),

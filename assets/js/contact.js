@@ -11,7 +11,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
   };
 
   try {
-    const response = await fetch("/send-feedback", {
+    const response = await fetch("https://astromatch-irbi.onrender.com/send-feedback", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
