@@ -1,0 +1,176 @@
+/* ✅ Style général */
+.chat-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    background: linear-gradient(to bottom, #0d0d26, #1a1a3a);
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* ✅ Boîte du chat */
+.chat-box {
+    width: 90%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 80vh; /* ✅ Ajustement dynamique */
+}
+
+/* ✅ Zone des messages */
+.messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto; /* ✅ Permet le scroll */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: calc(80vh - 60px); /* ✅ Ajustement de la hauteur */
+    scrollbar-width: thin; /* ✅ Pour Firefox */
+    scrollbar-color: rgba(255, 0, 127, 0.5) transparent; /* ✅ Style Firefox */
+}
+
+/* ✅ Custom scrollbar pour Chrome et Edge */
+.messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 127, 0.5);
+    border-radius: 10px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* ✅ Style général des messages */
+.message {
+    font-size: 16px;
+    line-height: 1.6; /* ✅ Meilleure lisibilité */
+    padding: 12px;
+    margin: 6px 0;
+    word-wrap: break-word;
+    white-space: pre-line;
+    border-radius: 12px;
+    max-width: 75%;
+}
+
+/* ✅ Message utilisateur */
+.message.user {
+    background: #ff007f;
+    align-self: flex-end;
+    color: white;
+    border-radius: 12px 12px 0 12px;
+}
+
+/* ✅ Message AstroBot */
+.message.bot {
+    background: rgba(255, 255, 255, 0.2);
+    align-self: flex-start;
+    color: white;
+    border-radius: 12px 12px 12px 0;
+}
+
+/* ✅ Espacement et structure des messages */
+.message strong {
+    font-weight: bold;
+    color: #ff007f;
+}
+
+.message em {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.message code {
+    font-family: monospace;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+/* ✅ Input du chat */
+.input-container {
+    display: flex;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ✅ Input text */
+.input-container input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: background 0.3s;
+}
+
+/* ✅ Placeholder text */
+.input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ✅ Focus sur l'input */
+.input-container input:focus {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Bouton envoyer */
+.input-container button {
+    background: #ff007f;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* ✅ Effet hover sur le bouton */
+.input-container button:hover {
+    background: #d40066;
+}
+
+/* ✅ Effet clic */
+.input-container button:active {
+    transform: scale(0.95);
+}
+
+/* ✅ Responsivité pour petits écrans */
+@media (max-width: 600px) {
+    .chat-box {
+        width: 95%;
+        height: 85vh;
+    }
+
+    .messages {
+        max-height: calc(85vh - 60px);
+    }
+
+    .input-container input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .input-container button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

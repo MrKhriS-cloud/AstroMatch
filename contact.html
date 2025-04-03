@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AstroMatch.</title>
+  <meta name="description"
+    content="AstroMatch est votre guide astrologique interactif pour explorer la compatibilité amoureuse.">
+  <meta name="keywords" content="astrologie, compatibilité amoureuse, conseils">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/AstroBot.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page dark-theme">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">AstroMatch</h1>
+        <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="astrobot.html">AstroBot</a></li>
+          <li><a href="Apropos.html">À Propos</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="intro.html">Commencer</a>
+
+    </div>
+    <style>
+      /* ✅ Contact Hero Section */
+      .contact-section {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom, #0d0d26, #1a1a3a);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px;
+      }
+
+      .contact-container {
+        max-width: 700px;
+        margin: 0 auto;
+        color: white;
+      }
+
+      .contact-title {
+        font-size: 32px;
+        color: var(--color-primary);
+      }
+
+      .contact-paragraph {
+        font-size: 18px;
+        max-width: 600px;
+        margin: 0 auto;
+        color: #e0e0e0;
+      }
+
+      .contact-form .form-control {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 12px;
+        border-radius: 8px;
+      }
+
+      .contact-form .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      .contact-form button {
+        background-color: #ff007f;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        transition: background 0.3s;
+      }
+
+      .contact-form button:hover {
+        background-color: #d40066;
+      }
+
+
+      /* ✅ Ajustement responsive pour différentes tailles d'écran */
+
+      /* Grands écrans */
+      @media (min-width: 992px) {
+        .contact-title {
+          font-size: 36px;
+        }
+
+        .contact-paragraph {
+          font-size: 20px;
+        }
+
+        .contact-container {
+          padding: 0 40px;
+        }
+      }
+
+      /* Écrans moyens (tablettes) */
+      @media (max-width: 991px) {
+        .contact-title {
+          font-size: 28px;
+        }
+
+        .contact-paragraph {
+          font-size: 17px;
+        }
+
+        .contact-form .form-control {
+          font-size: 15px;
+          padding: 10px;
+        }
+
+        .contact-form button {
+          padding: 10px 18px;
+          font-size: 15px;
+        }
+
+        .contact-container {
+          padding: 0 20px;
+        }
+      }
+
+      /* Petits écrans (téléphones) */
+      @media (max-width: 575px) {
+        .contact-title {
+          font-size: 24px;
+          text-align: center;
+        }
+
+        .contact-paragraph {
+          font-size: 16px;
+          text-align: center;
+        }
+
+        .contact-form .form-control {
+          font-size: 14px;
+          padding: 10px;
+        }
+
+        .contact-form button {
+          padding: 10px 16px;
+          width: 100%;
+        }
+
+        .contact-form {
+          text-align: center;
+        }
+      }
+    </style>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <!-- ✅ Section Hero - Contact -->
+    <section id="contact-hero" class="contact-section d-flex align-items-center">
+      <div class="contact-container text-center" data-aos="fade-up">
+
+        <h2 class="contact-title mb-4">📬 Nous contacter</h2>
+        <p class="contact-paragraph">
+          Ton avis compte pour nous ! Que tu aies une suggestion, une remarque, ou simplement envie de partager ton
+          expérience avec AstroMatch,
+          n'hésite pas à nous écrire.
+        </p>
+
+        <form class="contact-form" id="contact-form" method="POST" action="/send-feedback">
+          <div class="mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Ton nom" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Ton email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Ton message ou ton avis"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+
+          <!-- ✅ Zone de message dynamique -->
+          <div id="feedback-msg" style="margin-top: 15px;"></div>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="line"></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

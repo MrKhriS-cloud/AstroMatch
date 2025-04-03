@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>AstroMatch.</title>
+    <meta name="description"
+        content="AstroMatch est votre guide astrologique interactif pour explorer la compatibilité amoureuse.">
+    <meta name="keywords" content="astrologie, compatibilité amoureuse, conseils">
+
+
+    <!-- Favicons -->
+    <link href="assets/img/AstroBot.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main_Apropos.css" rel="stylesheet">
+</head>
+
+<body class="index-page dark-theme">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1 class="sitename">AstroMatch</h1>
+                <span>.</span>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="astrobot.html">AstroBot</a></li>
+                    <li><a href="Apropos.html" class="active">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted" href="intro.html">Commencer</a>
+
+        </div>
+        <style>
+            .about-section {
+                width: 100%;
+                height: calc(100vh - 70px);
+                padding-top: 120px;
+                padding-bottom: 60px;
+                background: url("../img/hero-bg.png") center center;
+                background-size: cover;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .about-container {
+                max-height: 80vh;
+                overflow-y: auto;
+                scrollbar-width: none;
+                /* Firefox */
+                -ms-overflow-style: none;
+                /* Edge */
+                padding: 0 20px;
+                text-align: center;
+                /* ✅ Centre tout le texte */
+            }
+
+            .about-container::-webkit-scrollbar {
+                display: none;
+                /* Chrome, Safari */
+            }
+
+            .about-title,
+            .about-subtitle {
+                color: var(--heading-color);
+            }
+
+            .about-paragraph {
+                max-width: 850px;
+                margin: 0 auto;
+                font-size: 18px;
+                color: var(--default-color);
+                line-height: 1.6;
+            }
+
+            .about-list {
+                list-style-position: inside;
+                /* ✅ Centre les puces */
+                text-align: center;
+                /* ✅ Centre aussi les éléments de liste */
+                display: inline-block;
+                padding-left: 0;
+                margin: 0 auto;
+                color: white;
+                font-size: 17px;
+                line-height: 1.6;
+            }
+        </style>
+    </header>
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <!-- Section À propos -->
+        <section id="about-astro" class="about-section d-flex align-items-center">
+            <div class="about-container text-center" data-aos="fade-up">
+
+                <h2 class="about-title mb-4">🔮 À propos d’AstroMatch</h2>
+                <p class="about-paragraph lead">
+                    AstroMatch est une application conçue pour guider chacun dans la compréhension de ses relations
+                    amoureuses, amicales ou familiales, à travers l’astrologie et l’intelligence artificielle.
+                </p>
+
+                <p class="about-paragraph mt-3">
+                    Dans un monde où les émotions sont parfois difficiles à décrypter, AstroMatch propose une approche
+                    moderne : utiliser la sagesse des signes astrologiques pour offrir des conseils concrets et
+                    bienveillants. L’expérience est entièrement anonyme et pensée pour respecter l’intimité de chaque
+                    utilisateur.
+                </p>
+
+                <h3 class="about-subtitle mt-5 mb-3">🤖 AstroBot, ton guide virtuel</h3>
+                <p class="about-paragraph">
+                    AstroBot est l’assistant au cœur de l’application. Il engage la conversation avec toi, t’écoute,
+                    pose des questions, et t’accompagne pas à pas. Grâce à lui, tu peux :
+                </p>
+
+                <ul class="about-list mt-2 mb-4 text-start mx-auto">
+                    <li>Explorer ton profil relationnel selon ton signe,</li>
+                    <li>Analyser ta compatibilité avec une autre personne,</li>
+                    <li>Poser des questions plus personnelles pour recevoir un conseil guidé.</li>
+                </ul>
+
+                <p class="about-paragraph">
+                    Tout se passe dans un dialogue naturel, comme avec un coach bienveillant.
+                </p>
+
+                <h3 class="about-subtitle mt-5 mb-3">🌟 Pourquoi cette application ?</h3>
+                <p class="about-paragraph">
+                    AstroMatch est née d’une idée simple : chacun mérite de mieux se connaître, de mieux comprendre ses
+                    émotions et ses liens aux autres. Que tu sois en couple, célibataire, dans le doute ou dans
+                    l’attente, cette application est un espace sûr pour mieux t’orienter dans ta vie relationnelle.
+                </p>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="line"></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

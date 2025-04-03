@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>AstroMatch - Chat</title>
+    <meta name="description" content="Discute avec AstroBot et découvre tes affinités amoureuses astrologiques.">
+    <meta name="keywords" content="astrologie, compatibilité amoureuse, AstroBot, chat">
+
+    <!-- Favicons -->
+    <link href="assets/img/AstroBot.png" rel="icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/chat.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="chat-page dark-theme">
+
+    <!-- ✅ HEADER -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <h1 class="sitename">AstroMatch</h1><span>.</span>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="astrobot.html" class="active">AstroBot</a></li>
+                    <li><a href="Apropos.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <a class="btn-getstarted" href="astrobot.html">Recommencer</a>
+        </div>
+    </header>
+
+    <!-- ✅ CHAT CONTAINER -->
+    <main class="main">
+        <section id="chat-container" class="chat-section">
+            <div class="chat-box">
+                <div class="messages" id="messages">
+                    <!-- Messages s'afficheront ici -->
+                </div>
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Écris un message..." autocomplete="off">
+                    <button id="send-btn"><i class="bi bi-send"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Chat JS -->
+    <script src="assets/js/chat.js"></script>
+
+</body>
+
+</html>
