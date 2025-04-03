@@ -66,7 +66,7 @@
         function speak(text, callback) {
           const utterance = new SpeechSynthesisUtterance(text);
           utterance.lang = 'fr-FR'; // Voix française
-          utterance.rate = 1.5;
+          utterance.rate = 1.1;
           utterance.pitch = 1;
           utterance.volume = 1;
 
