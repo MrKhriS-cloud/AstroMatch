@@ -30,18 +30,32 @@ document.addEventListener("DOMContentLoaded", async () => {
     astroBotIntro(); // Lancement automatique
 
 
-    // ✅ Fonction pour formater et afficher proprement le message
-    function formatMessage(text) {
-        // Remplace les sauts de ligne par des <br> pour la lisibilité
-        text = text.replace(/\n/g, "<br>");
+    // ✅ Fonction améliorée pour formater proprement le texte en HTML
+function formatMessage(text) {
+    // Supprime les séparateurs Markdown type --- ou ___
+    text = text.replace(/^-{2,}|_{2,}|~{2,}/gm, "");
 
-        // Convertit les mises en forme Markdown de base (gras, italique, etc.)
-        text = text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"); // **Gras**
-        text = text.replace(/\*(.*?)\*/g, "<em>$1</em>"); // *Italique*
-        text = text.replace(/`(.*?)`/g, "<code>$1</code>"); // `Code`
+    // En-têtes Markdown (#, ##, ###, ####) -> convertis en <strong> (ou <h3> si tu préfères)
+    text = text.replace(/^#{1,4}\s*(.+)$/gm, "<strong>$1</strong>");
 
-        return text;
-    }
+    // Gras (**bold**)
+    text = text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
+    // Italique (*italic*)
+    text = text.replace(/\*(.*?)\*/g, "<em>$1</em>");
+
+    // Code `inline`
+    text = text.replace(/`(.*?)`/g, "<code>$1</code>");
+
+    // Remplace les sauts de ligne par <br>
+    text = text.replace(/\n/g, "<br>");
+
+    // Supprime les espaces multiples en fin de lignes
+    text = text.replace(/[ \t]+$/gm, "");
+
+    return text.trim(); // Nettoie les blancs début/fin
+}
+
 
     // ✅ Fonction pour ajouter un message dans le chat avec le bon format
     function addMessage(text, sender) {
